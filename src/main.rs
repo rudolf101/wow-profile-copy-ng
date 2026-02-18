@@ -15,11 +15,11 @@ mod wow;
 
 fn fonts() -> Vec<Cow<'static, [u8]>> {
     vec![
-        include_bytes!("../assets/fonts/B612-Regular.ttf").as_slice().into(),
-        include_bytes!("../assets/fonts/B612-Bold.ttf").as_slice().into(),
-        include_bytes!("../assets/fonts/B612Mono-Regular.ttf").as_slice().into(),
-        include_bytes!("../assets/fonts/B612Mono-Bold.ttf").as_slice().into(),
-        ]
+        include_bytes!("../assets/fonts/NotoSans/NotoSans-Regular.ttf").as_slice().into(),
+        include_bytes!("../assets/fonts/NotoSans/NotoSans-Bold.ttf").as_slice().into(),
+        include_bytes!("../assets/fonts/NotoSans/NotoSansMono-Regular.ttf").as_slice().into(),
+        include_bytes!("../assets/fonts/NotoSans/NotoSansMono-Bold.ttf").as_slice().into(),
+    ]
 }
 
 fn main() -> iced::Result {
@@ -27,7 +27,7 @@ fn main() -> iced::Result {
         id: Some(String::from("wow-profile-copy-ng")),
         fonts: fonts(),
         default_font: Font {
-            family: font::Family::Name("B612"),
+            family: font::Family::Name("Noto Sans"),
             weight: font::Weight::Normal,
             stretch: font::Stretch::Normal,
             style: font::Style::Normal

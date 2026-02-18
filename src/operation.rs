@@ -201,7 +201,7 @@ impl Operation {
             scrollable(
                 text(
                     self.copy_logs.as_ref().unwrap().join("\n")
-                ).font(Font::with_name("B612 Mono"))
+                ).font(Font::with_name("Noto Sans Mono"))
             )
         };
 
